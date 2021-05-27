@@ -8,7 +8,7 @@
             background-color: #fa953b;
             margin-left: 40px;
             margin-top: 20px;
-            float: left;
+
         }
 
         .comandos{
@@ -16,8 +16,10 @@
             margin-top: 210px;
             margin-right: 150px;
 
-
         }
+
+
+        
         .casilla{
             width: 90px;
             height: 90px;
@@ -41,18 +43,6 @@
             color: #fafbfd;
             text-align: center;
         }
-
-        .boton{
-           font-size: 20px;
-            background: #5564eb;
-            color: #fafbfd
-        }
-
-        .boton:hover{
-            background: #ffa420;
-            color: #fafbfd
-        }
-
     </style>
 </head>
 </html>
@@ -257,20 +247,10 @@
 
 
 
-     <div class="comandos">
+    <div class="comandos">
 
+        <p>La posicion final es: </p> <%=@%>
 
-        <form method='post' action ='/ventanaComandos'>
-        <p>Introduzca la posicion inicial (1,2)(3,3)</p>
-            <input type='text' name='posicion'>
-      
-        <p>Introduzca la orientacion (N, E, O, S)</p>
-            <input type='text' name='orientacion'>
-
-            <br><br>
-            <br>
-            <input type='submit' value='Ingresar' class="boton">
-        </form>
     </div>
 
 
