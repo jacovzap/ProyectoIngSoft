@@ -1,10 +1,11 @@
 def calcularCamino(posicionInicial, orientacionInicial, comandos)
 
     array = Array.new(5) { Array.new(5) { 0 } }
-    
+
     numeros = posicionInicial.split(',')
     arrayPosicion = [numeros[0].to_i, numeros[1].to_i]
     arrayComandos = comandos.split('')
+    orientacionFinal = ""
 
     arrayComandos.each do |comando| 
         if orientacionInicial == "N"
@@ -51,6 +52,6 @@ def calcularCamino(posicionInicial, orientacionInicial, comandos)
             orientacionInicial = orientacionFinal
         end
     end
-    return arrayPosicion
+    return arrayPosicion, orientacionFinal
 
 end

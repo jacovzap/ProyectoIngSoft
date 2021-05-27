@@ -5,16 +5,23 @@ get '/' do
     erb :bienvenida
 end
 
-post '/inicio' do
-    erb :inicio
+post '/menu' do
+    erb :menu
+end
+
+post '/datosIniciales' do
+    erb :datosIniciales
 end
 
 post '/ventanaComandos' do
+    $posicionInicial = params[:posicionInicial]
+    $orientacionInicial = params[:orientacion]
     erb :ventanaComandos
 end
 
 
 post '/resultado' do
-    @resultado = 
+    comandos = params[:comandos]
+    @resultado = calcularCamino($posicionInicial, $orientacionInicial, comandos)
     erb :resultado
 end

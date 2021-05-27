@@ -8,18 +8,16 @@
             background-color: #fa953b;
             margin-left: 40px;
             margin-top: 20px;
-
+            float: left;
         }
 
         .comandos{
             float: right;
-            margin-top: 210px;
-            margin-right: 150px;
+            margin-top: 150px;
+            margin-right: 120px;
+
 
         }
-
-
-        
         .casilla{
             width: 90px;
             height: 90px;
@@ -43,6 +41,18 @@
             color: #fafbfd;
             text-align: center;
         }
+
+        .boton{
+           font-size: 20px;
+            background: #5564eb;
+            color: #fafbfd
+        }
+
+        .boton:hover{
+            background: #ffa420;
+            color: #fafbfd
+        }
+
     </style>
 </head>
 </html>
@@ -247,10 +257,14 @@
 
 
 
-    <div class="comandos">
+     <div class="comandos">
 
-        <p>La posicion final es: </p> <%=@%>
 
+         <div class="comandos">
+
+        <p>La posicion final es: </p> <%=@resultado%>
+
+    </div>
     </div>
 
 
@@ -258,3 +272,5 @@
 
    
 </body>
+
+

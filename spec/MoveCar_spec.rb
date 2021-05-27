@@ -56,7 +56,7 @@ RSpec.describe "separar correctamente los caracteres introducidos en un string" 
         orientacionInicial = "N"
         comandoAvance = "IAIAIAIAA"
         resultado = calcularCamino(posicionInicial, orientacionInicial, comandoAvance)
-        expect(resultado).to eq([1,3])
+        expect(resultado).to eq([[1,3], "N"])
     end
 
     it "deberia devolver [1,1] al introducir como texto el comando AADAADADDA, la posicion inicial 3,3 y la orientacion inicial E" do
@@ -64,7 +64,7 @@ RSpec.describe "separar correctamente los caracteres introducidos en un string" 
         orientacionInicial = "E"
         comandoAvance = "AADAADADDA"
         resultado = calcularCamino(posicionInicial, orientacionInicial, comandoAvance)
-        expect(resultado).to eq([1, 1])
+        expect(resultado).to eq([[1, 1], "E"])
     end
 
 
