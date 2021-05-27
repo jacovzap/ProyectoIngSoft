@@ -1,5 +1,5 @@
 Feature:
-    Como nino
+    Como usuario de la aplicacion
     Quiero recibir un mensaje de bienvenida 
     Para sentirme a gusto de iniciar dash and dot
 
@@ -10,8 +10,5 @@ Scenario:
 Scenario:
     Given visito la pagina de bienvenida 
     When presiono el boton para dar inicio
-    Then deberia ver el mensaje "Comandos a ejecutar" 
+    Then deberia ver la pagina de menu
 
-Scenario:
-    When visito la pagina de ejecucion 
-    Then deberia ver el campo por donde se movera el auto 

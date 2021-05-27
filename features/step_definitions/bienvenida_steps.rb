@@ -8,5 +8,13 @@ Then("deberia ver el mensaje {string}") do |message|
 end
 
 When("presiono el boton para dar inicio") do
-    click_button('iniciar')# Write code here that turns the phrase above into concrete actions
+    click_button('INICIAR')# Write code here that turns the phrase above into concrete actions
+end
+
+Then("deberia ver la pagina de menu") do
+    visit '/menu'
+end
+
+When ("visito la pagina de menu") do
+    visit '/menu'
 end

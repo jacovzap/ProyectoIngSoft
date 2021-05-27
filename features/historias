@@ -1,0 +1,12 @@
+
+Feature: 
+Como Usuario de la aplicación
+Quiero Un botón que me permita acceder al contenido de la aplicación
+Para Acceder al juego tras la pantalla de bienvenida
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Que me pregunten la cantidad de autos con los que quiero jugar
+    Para Jugar con la cantidad exacta que deseo
+    
+
