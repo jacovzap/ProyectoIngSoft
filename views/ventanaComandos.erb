@@ -1,259 +1,86 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        .cuadro{
-            width: 672px;
-            height: 672px;
-            background-color: #fa953b;
-            margin-left: 40px;
-            margin-top: 20px;
-            float: left;
-        }
-
-        .comandos{
-            float: right;
-            margin-top: 250px;
-            margin-right: 90px;
-
-
-        }
-        .casilla{
-            width: 90px;
-            height: 90px;
-            border-style: solid;
-            border-color: #fafbfd; 
-            float: left;
-            
-        }
-
-        .borde{
-            width: 90px;
-            height: 90px;
-            border-style: solid;
-            border-color: #fafbfd; 
-            float: left;
-            background-color: #4193fb;
-        }
-        div.borde p{
-            margin-top: 30px;
-            font-size: 25px;
-            color: #fafbfd;
-            text-align: center;
-        }
-
-        .boton{
-           font-size: 20px;
-            background: #5564eb;
-            color: #fafbfd
-        }
-
-        .boton:hover{
-            background: #ffa420;
-            color: #fafbfd
-        }
-
-    </style>
+      <link rel="stylesheet" type="text/css" href="css/juego.css"/> 
 </head>
 </html>
 
 <body>
-    <div class="principal">
+   
+     <main 
+    <% if $size.to_i == 5 %>
+    class="cuadro5x5"
+    <%elsif $size.to_i == 4 %>
+    class="cuadro4x4"
+    <%elsif $size.to_i == 3 %>
+    class="cuadro3x3"
+    <%end%>>
 
-    <main class="cuadro">
         <div class="fila">
-            <div class="borde">
+        <div class="borde">
             </div>
-
+        <%i = $size.to_i
+        while i > 0%>
+         
             <div class="borde">
-                <p>5</p>
+                <p><%=i%></p>
+                <%i = i -1%>
             </div>
-
-            <div class="borde">
-                <p>4</p>
-            </div>
-
-            <div class="borde">
-                <p>3</p>
-            </div>
-
-            <div class="borde">
-                <p>2</p>
-            </div>
-
-            <div class="borde">
-                <p>1</p>
-            </div>
+        <%end%>
 
             <div class="borde">
             </div>
         </div>
 
+        <%i = $size.to_i
+        while i > 0%>
         <div class="fila">
-            <div class="borde">
-                <p>5</p>
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
 
             <div class="borde">
-                <p>5</p>
+                <p><%=i%></p>
             </div>
+
+                <%j = $size.to_i
+            while j > 0%>
+                
+            
+            <div class="casilla">
+                <%if @posicionInicial[0] ==  j and @posicionInicial[1] ==  i%>
+                <img src="images/redcar.png" alt="Flowers in Chania" class="car"> 
+                
+                <%end%>
+            </div>
+            <%j = j - 1%>
+            <%end%>
+        
+            <div class="borde">
+                <p><%=i%></p>
+            </div>
+             <%i = i - 1%>
+             <%end%>
         </div>
+
 
          <div class="fila">
+        <div class="borde">
+            </div>
+        <%i = $size.to_i
+        while i > 0%>
+         
+            <div class="borde">
+                <p><%=i%></p>
+                <%i = i -1%>
+            </div>
+        <%end%>
 
             <div class="borde">
-                <p>4</p>
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="borde">
-                <p>4</p>
-            </div>
-
-
-        </div>
-
-        <div class="fila">
-            <div class="borde">
-                <p>3</p>
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="borde">
-                <p>3</p>
             </div>
         </div>
 
-        <div class="fila">
 
-            <div class="borde">
-                <p>2</p>
-            </div>
+    </main> <div class="principal">
 
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="borde">
-                <p>2</p>
-            </div>
-
-
-        </div>
-
-        <div class="fila">
-
-            <div class="borde">
-                <p>1</p>
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="casilla">
-            </div>
-
-            <div class="borde">
-                <p>1</p>
-            </div>
-        </div>
-
-        <div class="fila">
-
-            <div class="borde">
-            </div>
-
-            <div class="borde">
-                <p>5</p>
-            </div>
-
-            <div class="borde">
-                <p>4</p>
-            </div>
-
-            <div class="borde">
-                <p>3</p>
-            </div>
-
-            <div class="borde">
-                <p>2</p>
-            </div>
-
-            <div class="borde">
-                <p>1</p>
-            </div>
-
-            <div class="borde">
-               
-            </div>
-
-        </div>
-
-
-    </main>
 
 
 

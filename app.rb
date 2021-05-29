@@ -16,7 +16,8 @@ post '/datosIniciales' do
 end
 
 post '/ventanaComandos' do
-    $posicionInicial = params[:posicionInicial]
+    $inicial = params[:posicionInicial]
+    @posicionInicial = getInitialPosition($inicial)
     $orientacionInicial = params[:orientacion]
     erb :ventanaComandos
 end
@@ -24,6 +25,6 @@ end
 
 post '/resultado' do
     comandos = params[:comandos]
-    @resultado = calcularCamino($posicionInicial, $orientacionInicial, comandos)
+    @resultado = calcularCamino($inicial, $orientacionInicial, comandos)
     erb :resultado
 end

@@ -1,0 +1,77 @@
+.cuadro5x5{
+    width: 672px;
+    height: 672px;
+    background-color: #fa953b;
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+}
+
+.cuadro4x4{
+    width: 576px;
+    height: 576px;
+    background-color: #fa953b;
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+}
+
+.cuadro3x3{
+    width: 480px;
+    height: 480px;
+    background-color: #fa953b;
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+}
+
+.comandos{
+    float: right;
+    margin-top: 250px;
+    margin-right: 90px;
+
+
+}
+.casilla{
+    width: 90px;
+    height: 90px;
+    border-style: solid;
+    border-color: #fafbfd; 
+    float: left;
+
+    position: relative;
+}
+
+.borde{
+    width: 90px;
+    height: 90px;
+    border-style: solid;
+    border-color: #fafbfd; 
+    float: left;
+    background-color: #4193fb;
+}
+div.borde p{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #fafbfd;
+    text-align: center;
+}
+
+.boton{
+   font-size: 20px;
+    background: #5564eb;
+    color: #fafbfd
+}
+
+.boton:hover{
+    background: #ffa420;
+    color: #fafbfd
+}
+
+.car{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
