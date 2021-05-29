@@ -1,3 +1,10 @@
+
+def definirTamanioTablero(tamanio)
+    return tamanio
+end
+
+
+
 def calcularCamino(posicionInicial, orientacionInicial, comandos)
 
     array = Array.new(5) { Array.new(5) { 0 } }

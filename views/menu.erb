@@ -32,11 +32,27 @@
 
 <body>
    
+    
+    
+    <form method='post' action='/datosIniciales' class='botonTamanio'>
+
     <p class = "titulo">Ingresa el numero de autos para jugar 1 o 2</p>
-    <form method='post' action='/datosIniciales' class="botonTamanio" >
-        <input type='text' name='numeroDeAutos'>
-        <p class = "titulo">Ingresa el tamanio del mapa (3)(4)(5)</p>
-        <input type='text' name='tamanioMatriz'>
-        <input type="submit" value="A JUGAR!" class="boton">
-    </form> 
+    <select name="cars" id="cars">
+        <option value="oneCarSelected">1</option>
+        <option value="twoCarsSelected">2</option>
+    </select>
+
+    <p class = "titulo">Ingresa el tamanio del mapa (3)(4)(5)</p>
+    <select name="size" id="size">
+        <option value="3">3x3</option>
+        <option value="4">4x4</option>
+        <option value="5">5x5</option>
+
+    </select>
+
+    <br><br>
+    <input type="submit" value="A JUGAR!" class="boton">
+    </form>
+
+
 </body>

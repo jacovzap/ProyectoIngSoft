@@ -10,6 +10,8 @@ post '/menu' do
 end
 
 post '/datosIniciales' do
+    $size = params[:size]
+    $cars = params[:cars]
     erb :datosIniciales
 end
 

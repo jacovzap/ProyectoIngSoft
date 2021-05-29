@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .cuadro5x5{
+            width: 672px;
+            height: 672px;
+            background-color: #fa953b;
+            margin-left: 40px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .cuadro4x4{
+            width: 576px;
+            height: 576px;
+            background-color: #fa953b;
+            margin-left: 40px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .cuadro3x3{
+            width: 480px;
+            height: 480px;
+            background-color: #fa953b;
+            margin-left: 40px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .comandos{
+            float: right;
+            margin-top: 210px;
+            margin-right: 150px;
+
+
+        }
+        .casilla{
+            width: 90px;
+            height: 90px;
+            border-style: solid;
+            border-color: #fafbfd; 
+            float: left;
+            
+        }
+
+        .borde{
+            width: 90px;
+            height: 90px;
+            border-style: solid;
+            border-color: #fafbfd; 
+            float: left;
+            background-color: #4193fb;
+        }
+        div.borde p{
+            margin-top: 30px;
+            font-size: 25px;
+            color: #fafbfd;
+            text-align: center;
+        }
+
+        .boton{
+           font-size: 20px;
+            background: #5564eb;
+            color: #fafbfd
+        }
+
+        .boton:hover{
+            background: #ffa420;
+            color: #fafbfd
+        }
+
+    </style>
+</head>
+</html>
+
+<body>
+    <div class="principal">
+
+    <main 
+    <% if $size.to_i == 5 %>
+    class="cuadro5x5"
+    <%elsif $size.to_i == 4 %>
+    class="cuadro4x4"
+    <%elsif $size.to_i == 3 %>
+    class="cuadro3x3"
+    <%end%>>
+
+        <div class="fila">
+        <div class="borde">
+            </div>
+        <%i = $size.to_i
+        while i > 0%>
+         
+            <div class="borde">
+                <p><%=i%></p>
+                <%i = i -1%>
+            </div>
+        <%end%>
+
+            <div class="borde">
+            </div>
+        </div>
+
+        <%i = $size.to_i
+        while i > 0%>
+        <div class="fila">
+
+            <div class="borde">
+                <p><%=i%></p>
+            </div>
+
+                <%j = $size.to_i
+            while j > 0
+                j = j - 1%>
+            
+            <div class="casilla">
+            </div>
+            <%end%>
+        
+            <div class="borde">
+                <p><%=i%></p>
+            </div>
+             <%i = i - 1%>
+             <%end%>
+        </div>
+
+
+         <div class="fila">
+        <div class="borde">
+            </div>
+        <%i = $size.to_i
+        while i > 0%>
+         
+            <div class="borde">
+                <p><%=i%></p>
+                <%i = i -1%>
+            </div>
+        <%end%>
+
+            <div class="borde">
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+     <div class="comandos">
+
+
+        <form method='post' action ='/ventanaComandos'>
+        <p>Introduzca la posicion inicial (1,2)(3,3)</p>
+            <input type='text' name='posicionInicial'>
+      
+        <p>Introduzca la orientacion (N, E, O, S)</p>
+            <input type='text' name='orientacion'>
+
+            <br><br>
+            <br>
+            <input type='submit' value='Ingresar' class="boton">
+        </form>
+    </div>
+
+
+    </div>
+
+   
+</body>
