@@ -27,10 +27,8 @@
 
 .comandos{
     float: right;
-    margin-top: 250px;
-    margin-right: 90px;
-
-
+    margin-top: 200px;
+    margin-right: 170px;
 }
 .casilla{
     width: 90px;
@@ -68,10 +66,20 @@ div.borde p{
     color: #fafbfd
 }
 
-.car{
+.carHorizontal{
     position: absolute;
     top: 50%;
     left: 50%;
     width: 80%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.carVertical{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 80%;
     transform: translate(-50%, -50%);
 }

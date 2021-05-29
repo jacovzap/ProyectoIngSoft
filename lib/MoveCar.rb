@@ -1,8 +1,4 @@
 
-def definirTamanioTablero(tamanio)
-    return tamanio
-end
-
 
 def getInitialPosition(posicionInicial)
     numeros = posicionInicial.split(',')
@@ -19,7 +15,7 @@ def calcularCamino(posicionInicial, orientacionInicial, comandos)
     numeros = posicionInicial.split(',')
     arrayPosicion = [numeros[0].to_i, numeros[1].to_i]
     arrayComandos = comandos.split('')
-    orientacionFinal = ""
+    orientacionFinal = orientacionInicial
 
     arrayComandos.each do |comando| 
         if orientacionInicial == "N"

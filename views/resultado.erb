@@ -47,7 +47,32 @@
             <div class="casilla">
                 
                 <%if @resultado[0][0] ==  j and @resultado[0][1] ==  i%>
-                <img src="./images/redcar.png" alt="Flowers in Chania"> 
+
+                <%if @resultado[1] == "N"%>
+                <img src="images/Nredcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%elsif @resultado[1] == "E"%>
+                <img src="images/Eredcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif @resultado[1] == "O"%>
+                <img src="images/Oredcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif @resultado[1] == "S"%>
+                <img src="images/Sredcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%end%>
+   
+                <%end%>
+
+                <%if $cars.to_i == 2%>
+                <%if @resultado2[0][0] ==  j and @resultado2[0][1] ==  i%>
+
+                <%if @resultado2[1] == "N"%>
+                <img src="images/Nvioletcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%elsif @resultado2[1] == "E"%>
+                <img src="images/Evioletcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif @resultado2[1] == "O"%>
+                <img src="images/Ovioletcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif @resultado2[1] == "S"%>
+                <img src="images/Svioletcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%end%>
+                <%end%>
                 <%end%>
             </div>
             <%j = j - 1%>
@@ -84,9 +109,25 @@
 
 
          <div class="comandos">
+         <%if $cars.to_i == 1%>
+            <%if @resultado[0][0] > 0  and @resultado[0][1] > 0 and @resultado[0][0] < 6 and @resultado[0][1] < 6%>
+            <p>La posicion final es: </p> <%=@resultado%>
+            <%else%>
+            <p>OH NO! El vehiculo ha excedido los limites del camino</p> <%=@resultado%>
+            <%end%>
+        <%else%>
+            <%if @resultado[0][0] > 0  and @resultado[0][1] > 0 and @resultado[0][0] < 6 and @resultado[0][1] < 6%>
+            <p>La posicion final es: </p> <%=@resultado%>
+            <%else%>
+            <p>OH NO! El vehiculo 1 ha excedido los limites del camino</p> <%=@resultado%>
+            <%end%>
 
-        <p>La posicion final es: </p> <%=@resultado%>
-
+            <%if @resultado2[0][0] > 0  and @resultado2[0][1] > 0 and @resultado2[0][0] < 6 and @resultado2[0][1] < 6%>
+            <p>La posicion final es: </p> <%=@resultado2%>
+            <%else%>
+            <p>OH NO! El vehiculo 2 ha excedido los limites del camino</p> <%=@resultado2%>
+            <%end%>
+        <%end%>
     </div>
     </div>
 

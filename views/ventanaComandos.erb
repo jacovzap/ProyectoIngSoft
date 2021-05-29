@@ -47,9 +47,35 @@
             
             <div class="casilla">
                 <%if @posicionInicial[0] ==  j and @posicionInicial[1] ==  i%>
-                <img src="images/redcar.png" alt="Flowers in Chania" class="car"> 
-                
+
+                <%if $orientacionInicial == "N"%>
+                <img src="images/Nredcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%elsif $orientacionInicial == "E"%>
+                <img src="images/Eredcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif $orientacionInicial == "O"%>
+                <img src="images/Oredcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif $orientacionInicial == "S"%>
+                <img src="images/Sredcar.png" alt="Flowers in Chania" class="carVertical"> 
                 <%end%>
+        
+                <%end%>
+
+                <%if $cars.to_i == 2 %>
+                <%if @posicionInicial2[0] ==  j and @posicionInicial2[1] ==  i%>
+
+                <%if $orientacionInicial2 == "N"%>
+                <img src="images/Nvioletcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%elsif $orientacionInicial2 == "E"%>
+                <img src="images/Evioletcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif $orientacionInicial2 == "O"%>
+                <img src="images/Ovioletcar.png" alt="Flowers in Chania" class="carHorizontal"> 
+                <%elsif $orientacionInicial2 == "S"%>
+                <img src="images/Svioletcar.png" alt="Flowers in Chania" class="carVertical"> 
+                <%end%>
+                <%end%>
+        
+                <%end%>
+
             </div>
             <%j = j - 1%>
             <%end%>
@@ -86,7 +112,7 @@
 
      <div class="comandos">
 
-
+        <%if $cars.to_i == 1%>
         <form method='post' action ='/resultado'>
       
         <p>Introduzca los movimientos que desea realizar (ADAIA)</p>
@@ -96,6 +122,19 @@
             <br>
             <input type='submit' value='Mover!' class="boton">
         </form>
+        <%else%>
+            <form method='post' action ='/resultado'>
+      
+            <p>Introduzca los movimientos que desea realizar al auto 1</p>
+            <input type='text' name='comandos'>
+
+            <p>Introduzca los movimientos que desea realizar al auto 2</p>
+            <input type='text' name='comandos2'>
+            <br><br>
+            <br>
+            <input type='submit' value='Mover!' class="boton">
+        </form>
+        <%end%>
     </div>
 
 

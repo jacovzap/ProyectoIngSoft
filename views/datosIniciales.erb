@@ -80,7 +80,7 @@
 
      <div class="comandos">
 
-
+        <%if $cars.to_i == 1%>
         <form method='post' action ='/ventanaComandos'>
         <p>Introduzca la posicion inicial (1,2)(3,3)</p>
             <input type='text' name='posicionInicial'>
@@ -92,6 +92,26 @@
             <br>
             <input type='submit' value='Ingresar' class="boton">
         </form>
+        <%else%>
+       <form method='post' action ='/ventanaComandos'>
+        <p>Introduzca la posicion inicial del auto 1</p>
+            <input type='text' name='posicionInicial'>
+      
+        <p>Introduzca la orientacion del auto 1</p>
+            <input type='text' name='orientacion'>
+
+        <p>Introduzca la posicion inicial del auto 2</p>
+            <input type='text' name='posicionInicial2'>
+      
+        <p>Introduzca la orientacion del auto 2</p>
+            <input type='text' name='orientacion2'>
+
+            <br><br>
+            <br>
+            <input type='submit' value='Ingresar' class="boton">
+        </form>
+
+        <%end%>
     </div>
 
 
