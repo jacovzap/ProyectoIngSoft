@@ -105,8 +105,6 @@
 
     </main>
 
-     <div class="comandos">
-
 
          <div class="comandos">
          <%if $cars.to_i == 1%>
@@ -128,10 +126,16 @@
             <p>OH NO! El vehiculo 2 ha excedido los limites del camino</p> <%=@resultado2%>
             <%end%>
         <%end%>
+
+<br><br><br>
+
+            <form method='post' action ='/menu'>
+            <input type='submit' value='VOLVER A JUGAR' class="boton">
     </div>
-    </div>
+   
 
 
+    
     </div>
 
    
