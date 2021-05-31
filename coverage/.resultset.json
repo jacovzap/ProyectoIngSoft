@@ -1,17 +1,17 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/jacovzap/semestre8cho/IngSoftware/DashAndDot/app.rb": {
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/app.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          0,
+          2,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -55,7 +55,7 @@
           null
         ]
       },
-      "/home/jacovzap/semestre8cho/IngSoftware/DashAndDot/lib/MoveCar.rb": {
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/lib/MoveCar.rb": {
         "lines": [
           null,
           null,
@@ -126,37 +126,70 @@
           null
         ]
       },
-      "/home/jacovzap/semestre8cho/IngSoftware/DashAndDot/features/step_definitions/bienvenida_steps.rb": {
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/bienvenida_steps.rb": {
         "lines": [
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
-          0,
-          null,
-          null,
           1,
-          0,
           null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
           null,
           null
         ]
       },
-      "/home/jacovzap/semestre8cho/IngSoftware/DashAndDot/features/step_definitions/my_steps.rb": {
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/botoninicio_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/determinarposicion_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/iniciar.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null
+        ]
+      },
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/my_steps.rb": {
         "lines": [
 
         ]
       },
-      "/home/jacovzap/semestre8cho/IngSoftware/DashAndDot/features/step_definitions/template_steps.rb": {
+      "D:/University/9th/Ingsoft/proyecto 2.0/ProyectoIngSoft/features/step_definitions/template_steps.rb": {
         "lines": [
           1,
           0,
@@ -217,6 +250,6 @@
         ]
       }
     },
-    "timestamp": 1622426024
+    "timestamp": 1622435932
   }
 }
