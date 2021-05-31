@@ -1,12 +1,68 @@
 
 Feature: 
-Como Usuario de la aplicación
-Quiero Un botón que me permita acceder al contenido de la aplicación
-Para Acceder al juego tras la pantalla de bienvenida
+    Como Usuario de la aplicación
+    Quiero Un botón que me permita acceder al contenido de la aplicación
+    Para Acceder al juego tras la pantalla de bienvenida
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Poder determinar la posición inicial del auto
+    Para Decidir donde inicia mi auto/s en el juego
+    
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Poder determinar la posición inicial del auto
+    Para Decidir la posición inicial hacia donde apunta el auto desde el inicio
+
+Feature: 
+    Como Usuario de la aplicación
+    Quiero Un botón que me envíe directamente al juego tras elegir mis opciones
+    Para Iniciar el juego tras mis elecciones
+
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Ingresar comandos para el movimiento del auto
+    Para Establecer como y hacia donde se moverá el auto
+
+Feature: 
+    Como Usuario de la aplicación
+    Quiero Un botón para poder "ejecutar" los comandos ingresados
+    Para Ejecutar los comando ingresados
+
+Feature: 
+    Como Usuario de la aplicación
+    Quiero Ver la posición final del auto
+    Para Ver el resultado final de mis comandos
+
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Saber la dirección final del auto
+    Para Ver el resultado final de mis comandos
 
 Feature:
     Como Usuario de la aplicación
     Quiero Que me pregunten la cantidad de autos con los que quiero jugar
     Para Jugar con la cantidad exacta que deseo
-    
 
+Feature: 
+    Como Usuario de la aplicación
+    Quiero Que poder definir un área/campo por donde se moverá el auto
+    Para Delimitar el área en el que voy a jugar
+
+Feature: 
+    Como Usuario de la aplicación
+    Quiero Ver el "área" donde se moverá el auto
+    Para Poder ver el "área" donde se moverá el auto
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Ver la posición final del auto en el tablero
+    Para Saber donde terminó el auto en el tablero
+
+Feature:
+    Como Usuario de la aplicación
+    Quiero Que el programa me muestre un mensaje si mis comandos llevaron a un "choque"
+    Para Ver el resultado final de mis comandos

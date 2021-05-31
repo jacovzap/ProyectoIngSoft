@@ -12,3 +12,6 @@ Scenario:
     When presiono el boton para dar inicio
     Then deberia ver la pagina de menu
 
+Scenario:
+    When presiono un boton 
+    Then accedo a la pagina de juego
